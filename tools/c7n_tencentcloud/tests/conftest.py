@@ -15,6 +15,7 @@ def credential_env_vars(monkeypatch):
     monkeypatch.setenv("TENCENTCLOUD_REGION", "na-ashburn")
 
 
+
 @pytest.fixture(scope="package")
 def vcr_config():
     return {
