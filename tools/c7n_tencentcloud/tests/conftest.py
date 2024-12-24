@@ -8,7 +8,6 @@ from c7n.config import Config
 from c7n.ctx import ExecutionContext
 from c7n_tencentcloud.client import Session
 
-
 @pytest.fixture(autouse=True)
 def credential_env_vars(monkeypatch):
     monkeypatch.setenv("TENCENTCLOUD_SECRET_ID", "xyz")
